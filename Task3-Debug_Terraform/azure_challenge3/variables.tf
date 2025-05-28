@@ -1,11 +1,13 @@
 variable "resource_group_name" {
   description = "The name of the resource group"
   type        = string
+  default = rg_hackathon
 }
 
 variable "location" {
   description = "The location of the resource group"
   type        = string
+  default = centralindia
 }
 
 variable "vm_size" {
