@@ -7,9 +7,9 @@
 
 #### Tasks:
 - Use provided scripts to manually create resources:
-  - AWS: EC2 instance, Security Group and S3 bucket. resources created in us-east-1 region with the naming convention of task2-import-me-<resource name>
+  - AWS: EC2 instanceand S3 bucket. Resources created in Mumbai region with the naming convention of task2-import-me-<resource name>
 
-  - Azure: VM, Network Security Group, Storage account and Container
+  - Azure: VM and Storage account. Resources created in CentralIndia location
 - Write Terraform code to match the manually created resources
 - Import them into Terraform state using `terraform import`
 
