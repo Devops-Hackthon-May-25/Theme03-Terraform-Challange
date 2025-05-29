@@ -24,7 +24,7 @@ challenge1_webserver/
 ├── backend.tf (optional)       
 ├── terraform.tfvars (optional) 
 ├── modules/   (optional)                  
-│   ├── vpc/
+│   ├── s3/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
@@ -32,10 +32,6 @@ challenge1_webserver/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   └── alb/
-│       ├── main.tf
-│       ├── variables.tf
-│       └── outputs.tf
 └── README.md
 ```
 
