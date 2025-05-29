@@ -1,20 +1,19 @@
 
-### ✅ Challenge 1: Web Server with ALB and VPC
+### ✅ Challenge 1: Provision Infra
 
-**Objective**: Provision a web server behind an Application Load Balancer (ALB) within a custom VPC.
+**Objective**: Provision a server
 
 **Clouds**: AWS and Azure  
 **Time Limit**: 30 minutes
 
 #### Tasks:
-- Create a VPC (AWS) / Virtual Network (Azure)
 - Deploy a web server (EC2 in AWS / VM in Azure)
-- Set up an ALB (AWS) / Load Balancer (Azure)
-- Ensure the web server is accessible via the load balancer
+- Set up an S3 Bucket (AWS) / Stroage Account (Azure)
+- Ensure the web server is accessible
+- please use the region ap-south-1(AWS) and centralindia (Azure)
 
 #### Deliverables:
-- Terraform code for both AWS and Azure
-- Output the public DNS or IP of the load balancer
+- Terraform code for AWS or Azure
 
 ---
 
@@ -27,8 +26,8 @@
 
 #### Tasks:
 - Use provided scripts to manually create resources:
-  - AWS: EC2 instance, Security Group and S3 bucket
-  - Azure: VM, Network Security Group, Storage account and Container
+  - AWS: EC2 instance and S3 bucket
+  - Azure: VM and storage account
 - Write Terraform code to match the manually created resources
 - Import them into Terraform state using `terraform import`
 
