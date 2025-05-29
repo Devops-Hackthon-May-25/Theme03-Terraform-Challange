@@ -10,6 +10,8 @@
 - Deploy a web server (EC2 in AWS / VM in Azure)
 - Set up an ALB (AWS) / Load Balancer (Azure)
 - Ensure the web server is accessible via the load balancer
+- Please use the given index.html
+- Please use us-east-1 region for AWS and eastus location for Azure
 
 
 #### Deliverables:
@@ -17,13 +19,15 @@
 - Output the public DNS or IP of the load balancer
 
 #### Recommended Terraform Folder Struture:
+
+```plaintext
 challenge1_webserver/
-├── main.tf                  # Entry point to call modules and configure providers
-├── variables.tf             # Input variables for the root module
-├── outputs.tf               # Outputs from the root module
-├── backend.tf (optional)    # Remote backend configuration (e.g., S3, Azure Storage)
-├── terraform.tfvars (optional) # Variable values
-├── modules/
+├── main.tf                    
+├── variables.tf                 
+├── outputs.tf                   
+├── backend.tf (optional)       
+├── terraform.tfvars (optional) 
+├── modules/   (optional)                  
 │   ├── vpc/
 │   │   ├── main.tf
 │   │   ├── variables.tf
@@ -37,6 +41,7 @@ challenge1_webserver/
 │       ├── variables.tf
 │       └── outputs.tf
 └── README.md
+```
 
 #### ✅ Optional Best Practices (Bonus Points)
 
